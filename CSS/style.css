@@ -1179,22 +1179,14 @@ hr {
 
 /* Estilo para los tabs */
 .tab {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 85%;
-  padding: 4% 4%;
-  margin: 0% 3%;
-  background: linear-gradient(90deg, white 50%, transparent 50%),
-    linear-gradient(90deg, white 50%, transparent 50%),
-    linear-gradient(0deg, white 50%, transparent 50%),
-    linear-gradient(0deg, white 50%, transparent 50%);
-  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
-  background-size: 16px 4px, 16px 4px, 4px 16px, 4px 16px;
-  background-position: 0% 0%, 100% 100%, 0% 100%, 100% 0px;
-  border-radius: 5px;
-  animation: dash 7s linear infinite;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+    padding: 4% 4%;
+    margin: 0% 2.5%;
+    border: 5px white dashed;
 }
 
 @keyframes dash {
@@ -1239,13 +1231,13 @@ hr {
 
 /* Estilo para los contenidos ocultos */
 .content {
-  display: none;
-  background-color: white;
-  color: black;
-  width: 85%;
-  border-radius: 0% 0% 10% 10%;
-  padding: 4% 4%;
-  margin: 0% 3%;
+    display: none;
+    background-color: #f6d7b0;
+    color: #33220E;
+    width: 85%;
+    border-radius: 0% 0% 10% 10%;
+    padding: 4% 4%;
+    margin: 0% 3%;
 }
 
 .content p {
