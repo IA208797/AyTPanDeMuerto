@@ -167,15 +167,6 @@ header {
 }
 
 /* Cabeza */
-#Pan path:nth-child(4) {
-  stroke-dasharray: 80%;
-  stroke-dashoffset: 80%;
-  fill: none;
-
-  animation: AcomodoPan1 6s ease forwards 3s;
-}
-
-/* Cabeza */
 #Pan path:nth-child(4)
 {
   stroke-dasharray:80%;
