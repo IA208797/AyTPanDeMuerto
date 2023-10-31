@@ -161,8 +161,9 @@ header {
   width: 100%;
   height: auto;
   background-color: #5d1f41;
-  outline: 30px rgba(255, 255, 255, 0.652) dotted;
+  outline: 30px #961d5f dotted;
   outline-offset: -15px;
+  position: relative;
 }
 
 /* Cabeza */
@@ -174,40 +175,49 @@ header {
   animation: AcomodoPan1 6s ease forwards 3s;
 }
 
+/* Cabeza */
+#Pan path:nth-child(4)
+{
+  stroke-dasharray:80%;
+  stroke-dashoffset: 80%;
+  fill: none;
+
+  animation:  AcomodoPan1 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
+}
 /* Huesos */
-#Pan path:nth-child(1) {
+#Pan path:nth-child(1)
+{
+  stroke-dasharray:80%;
+  stroke-dashoffset: 80%;
+  fill: none;
+ 
+  animation:  AcomodoPan2 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
+}
+#Pan path:nth-child(3)
+{
   stroke-dasharray: 80%;
   stroke-dashoffset: 80%;
   fill: none;
-
-  animation: AcomodoPan2 6s ease forwards 3s;
+  
+  animation:  AcomodoPan2 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
 }
-
-#Pan path:nth-child(5) {
-  stroke-dasharray: 80%;
+#Pan path:nth-child(2)
+{
+  stroke-dasharray:80%;
   stroke-dashoffset: 80%;
   fill: none;
 
-  animation: AcomodoPan2 6s ease forwards 3s;
+  animation:  AcomodoPan2 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
 }
-
-#Pan path:nth-child(2) {
-  stroke-dasharray: 80%;
-  stroke-dashoffset: 80%;
-  fill: none;
-
-  animation: AcomodoPan2 6s ease forwards 3s;
-}
-
 /* Cuerpo */
-#Pan path:nth-child(3) {
-  stroke-dasharray: 200%;
+#Pan path:nth-child(5)
+{
+  stroke-dasharray:200%;
   stroke-dashoffset: 200%;
   fill: none;
 
-  animation: AcomodoPan3 6s ease forwards 3s;
+  animation:  AcomodoPan3 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
 }
-
 
 #Calaveras g:nth-child(1) {
   stroke-dasharray: 80%;
@@ -222,121 +232,36 @@ header {
 }
 
 @keyframes AcomodoPan1 {
-  0% {}
-
-  25% {
-    fill: none;
-    translate: 0px 0px;
-  }
-
-  40% {
-    fill: none;
-  }
-
-  49% {
-    fill: none;
-  }
-
-  50% {
-    translate: 0px 0px;
-    fill: none;
-    opacity: 1;
-  }
-
-  80% {
-    translate: 0px 0px;
-    fill: #ffffff;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-    fill: #ffffff;
-    translate: 0px -70px;
-    opacity: 1;
-  }
+  0%   { }
+  25%  {  fill: none; translate: 0px 0px; }
+  40%  {  fill: none;}
+  49%  {  fill: none;}
+  50%  {  translate: 0px 0px; fill: none; opacity: 1; fill: #ffffff00; }
+  80%  {  translate: 0px 0px; fill: #ffffff00; }
+  95%  {  opacity: 1; }
+  100% { stroke-dashoffset: 0; fill: #ffffff; translate: 0px -70px; opacity: 1;}
 }
-
 @keyframes AcomodoPan2 {
-  0% {}
-
-  25% {
-    fill: none;
-    translate: 0px 0px;
-  }
-
-  40% {
-    fill: none;
-  }
-
-  49% {
-    fill: none;
-  }
-
-  50% {
-    translate: 0px 0px;
-    fill: none;
-    opacity: 1;
-  }
-
-  80% {
-    translate: 0px 0px;
-    fill: #ffffff;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-    fill: #ffffff;
-    translate: 0px 10px;
-    opacity: 1;
-  }
+  0%   { }
+  25%  {  fill: none; translate: 0px 0px; }
+  40%  {  fill: none;}
+  49%  {  fill: none;}
+  50%  {  translate: 0px 0px; fill: none; opacity: 1 ; }
+  80%  {  translate: 0px 0px; fill: #ffffff00;}
+  95%  {  opacity: 1;}
+  100% {  stroke-dashoffset: 0; fill: #ffffff;  translate: 0px 10px; opacity: 1;}
 }
-
 @keyframes AcomodoPan3 {
-  0% {}
-
-  25% {
-    fill: none;
-    translate: 0px 0px;
-  }
-
-  40% {
-    fill: none;
-  }
-
-  49% {
-    fill: none;
-  }
-
-  50% {
-    translate: 0px 0px;
-    fill: none;
-    opacity: 1;
-  }
-
-  80% {
-    translate: 0px 0px;
-    fill: #ffffff;
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-    fill: #ffffff;
-    translate: 0px 150px;
-    opacity: 1;
-  }
+  0%   { }
+  25%  {  fill: none; translate: 0px 0px; }
+  40%  {  fill: none;}
+  49%  {  fill: none;}
+  50%  {  translate: 0px 0px; fill: none; opacity: 1 ; }
+  80%  {  translate: 0px 0px; fill: #ffffff00;}
+  95%  {  opacity: 1;}
+  100% {  stroke-dashoffset: 0; fill: #ffffff;  translate: 0px 150px; opacity: 1;}
 }
+
 
 #PapelPicado g:nth-child(1) {
   stroke-dasharray: 200%;
@@ -437,7 +362,7 @@ header {
 .wrapper {
   position: absolute;
   left: 0px;
-  top: 306px;
+  top: 6px;
   width: 100%;
   height: auto;
   display: flex;
@@ -1510,11 +1435,6 @@ footer p {
     width: 70%;
   }
 
-  .wrapper svg {
-    width: 70%;
-    height: 50%;
-  }
-
   #Carrusel {
     width: 80%;
   }
@@ -1556,11 +1476,6 @@ footer p {
 
     top: 17vw;
 
-  }
-
-  .wrapper svg {
-    width: 50%;
-    height: 50%;
   }
 
   /* -----===== EVOLUCION =====----- */
@@ -1637,11 +1552,6 @@ footer p {
 
   #panSVG {
     width: 40%;
-  }
-
-  .wrapper svg {
-    width: 40%;
-    height: 50%;
   }
 
   .popup {
@@ -1764,74 +1674,4 @@ footer p {
 }
 
 /*=========MEDIA QUERIES PARA EL SVG=========*/
-@media screen and (min-width: 300px) {
-  .wrapper {
 
-    top: 318px;
-
-  }
-
-}
-
-@media screen and (min-width: 330px) {
-  .wrapper {
-
-    top: 275px;
-
-  }
-
-}
-
-@media screen and (min-width: 430px) {
-  .wrapper {
-
-    top: 315px;
-    padding: 21% 0%;
-  }
-
-}
-
-@media screen and (min-width: 550px) {
-  .wrapper {
-
-    top: 382px;
-
-  }
-
-}
-
-@media screen and (min-width: 760px) {
-  .wrapper {
-
-    top: 476px;
-
-  }
-
-}
-
-@media screen and (min-width: 965px) {
-  .wrapper {
-
-    top: 511px;
-
-  }
-
-}
-
-@media screen and (min-width: 1200px) {
-  .wrapper {
-
-    top: 380px;
-
-  }
-
-}
-
-@media screen and (min-width: 1600px) {
-  .wrapper {
-
-    top: 688px;
-
-  }
-
-}
