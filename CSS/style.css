@@ -128,7 +128,7 @@ header {
 }
 
 /* -----===== SVG =====----- */
-#SVG {
+#SVG{
   width: 100%;
   height: auto;
   display: flex;
@@ -136,8 +136,7 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-#Partes {
+#Partes{
   width: 100%;
   height: auto;
   display: flex;
@@ -145,27 +144,26 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-#Partes h1 {
+#Partes h1{
   padding: 0;
   font-family: var(--font-titulos);
 }
-
 #Partes {
   font-family: var(--font-Fira);
   font-size: var(--font-p);
   line-height: var(--font-interlineado);
 }
 
-#panSVG {
+#panSVG
+{
   width: 100%;
   height: auto;
   background-color: #5d1f41;
   outline: 30px #961d5f dotted;
   outline-offset: -15px;
+  margin: 5% 0 5% 0;
   position: relative;
 }
-
 /* Cabeza */
 #Pan path:nth-child(4)
 {
@@ -210,18 +208,19 @@ header {
   animation:  AcomodoPan3 5s cubic-bezier(.47,.01,0,.81) forwards 3s;
 }
 
-#Calaveras g:nth-child(1) {
-  stroke-dasharray: 80%;
+
+#Calaveras g:nth-child(1)
+{
+  stroke-dasharray:80%;
   stroke-dashoffset: 80%;
   animation: line-anim 6s ease forwards 1s;
 }
-
-#Calaveras g:nth-child(2) {
-  stroke-dasharray: 80%;
+#Calaveras g:nth-child(2)
+{
+  stroke-dasharray:80%;
   stroke-dashoffset: 80%;
   animation: line-anim 6s ease forwards 1s;
 }
-
 @keyframes AcomodoPan1 {
   0%   { }
   25%  {  fill: none; translate: 0px 0px; }
@@ -253,87 +252,79 @@ header {
   100% {  stroke-dashoffset: 0; fill: #ffffff;  translate: 0px 150px; opacity: 1;}
 }
 
-
-#PapelPicado g:nth-child(1) {
-  stroke-dasharray: 200%;
+#PapelPicado g:nth-child(1)
+{
+  stroke-dasharray:200%;
   stroke-dashoffset: 200%;
   animation: line-anim 7s ease forwards;
 }
 
 @keyframes line-anim {
-  90% {
-    opacity: 1;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 0;
+  90%{opacity: 1;}
+  
+  100%{
+      stroke-dashoffset: 0;
+      opacity: 0;
   }
 }
 
-#panInteractivo path:nth-child(1) {
+#panInteractivo path:nth-child(1)
+{
   opacity: 0;
-  animation: flicker-1 2s ease forwards 8.5s;
+        animation: flicker-1 2s  ease forwards 8.5s;
 }
-
-#panInteractivo path:nth-child(2) {
+#panInteractivo path:nth-child(2)
+{
   opacity: 0;
-  animation: flicker-1 2s ease forwards 8.5s;
-}
-
-#panInteractivo path:nth-child(3) {
+          animation: flicker-1 2s  ease forwards 8.5s;}
+#panInteractivo path:nth-child(3)
+{
   opacity: 0;
-  animation: flicker-1 2s ease forwards 8.5s;
-}
-
-#panInteractivo path:nth-child(4) {
+          animation: flicker-1 2s  ease forwards 8.5s;}
+#panInteractivo path:nth-child(4)
+{
   opacity: 0;
-  animation: flicker-1 2s ease forwards 8.5s;
-}
-
-#panInteractivo path:nth-child(5) {
+          animation: flicker-1 2s  ease forwards 8.5s;}
+#panInteractivo path:nth-child(5)
+{
   opacity: 0;
-  animation: flicker-1 2s ease forwards 8.5s;
-}
+          animation: flicker-1 2s  ease forwards 8.5s; }
 
 
 
 @keyframes flicker-1 {
-  0% {
-    opacity: 0;
-  }
-
+  0% {opacity: 0;}
   100% {
     opacity: 0;
   }
-
+  
 }
 
-.color {
+.color{
   background: linear-gradient(to right, #e1e0ff, #d7fadd);
 }
 
-#panSVG h1 {
+#panSVG h1{
   letter-spacing: 3px;
-
+  
 }
 
-#panSVG p {
+#panSVG p{
   font-size: 16px;
   padding: 20px
 }
 
-#panSVG p:last-of-type {
+#panSVG p:last-of-type{
   padding-bottom: 0;
 }
 
-.try-again {
+.try-again{
   cursor: pointer;
   position: relative;
   font-size: 16px;
 }
 
-.try-again:after {
+.try-again:after{
   content: '';
   position: absolute;
   left: 15px;
@@ -345,48 +336,44 @@ header {
   transition: all 0.3s ease;
 }
 
-.try-again:hover:after {
+.try-again:hover:after{
   left: 40%;
   right: 40%;
 }
 
-.wrapper {
-  position: absolute;
+.wrapper{
+  position:absolute;
   left: 0px;
-  top: 6px;
+  top: 06px;
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: column;  
 }
-
-.wrapper p {
+.wrapper p{
   color: white;
   padding: 10px;
 }
-
-.wrapper ul {
+.wrapper ul{
   color: white;
   padding: 0px 10px 0 30px;
   list-style: circle;
 }
-
-.wrapper svg {
+.wrapper svg{
   width: 100%;
   height: 100%;
 }
-
-#panInteractivo {
+#panInteractivo{
   display: flex;
   align-items: center;
-}
+} 
 
 
-.button {
+.button{
   cursor: pointer;
-  position: static;
+  position:static;
   z-index: 2;
   background-color: #79155b94;
   outline: none;
@@ -400,17 +387,16 @@ header {
   box-shadow: 0 0 0 white, 0 0 0 white;
   width: 100%;
   height: 30%;
-
-
+  
+  
 }
-
 /* 
 .button{
   box-shadow: -15px 0 70px -15px #ff964b, 15px 0 70px -15px #a24219;
 } */
 
 
-.popup {
+.popup{
   opacity: 0;
   visibility: hidden;
   height: 300px;
@@ -425,7 +411,7 @@ header {
   transition: all 0.2s ease
 }
 
-.popup-inside {
+.popup-inside{
   position: absolute;
   left: 0;
   top: 0;
@@ -435,11 +421,11 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 0 black;
   transition:
-    box-shadow 0.5s ease 0.7s,
-    border-radius 0.35s ease 0.7s;
+          box-shadow 0.5s ease 0.7s,
+          border-radius 0.35s ease 0.7s;
 }
 
-.backgrounds {
+.backgrounds{
   position: absolute;
   left: 0;
   top: 0;
@@ -448,7 +434,7 @@ header {
   overflow: hidden;
 }
 
-.background {
+.background{
   --offset: 0;
   position: absolute;
   left: var(--offset);
@@ -461,7 +447,7 @@ header {
   border-radius: 50%;
 }
 
-.background2 {
+.background2{
   --offset: 10%;
   position: absolute;
   left: var(--offset);
@@ -473,19 +459,19 @@ header {
   transition: all 0.5s ease 0.1s;
 }
 
-.background3 {
+.background3{
   --offset: 20%;
   position: absolute;
   left: var(--offset);
   right: var(--offset);
   bottom: var(--offset);
   top: var(--offset);
-  background: linear-gradient(to right, #62324c, #df8254);
+  background: linear-gradient(to right,#62324c, #df8254);
   z-index: 2;
   transition: all 0.5s ease 0.2s;
 }
 
-.background4 {
+.background4{
   --offset: 30%;
   position: absolute;
   left: var(--offset);
@@ -497,7 +483,7 @@ header {
   transition: all 0.5s ease 0.3s;
 }
 
-.background5 {
+.background5{
   --offset: 40%;
   position: absolute;
   left: var(--offset);
@@ -509,7 +495,7 @@ header {
   transition: all 0.5s ease 0.4s;
 }
 
-.background6 {
+.background6{
   --offset: 40%;
   position: absolute;
   left: var(--offset);
@@ -519,10 +505,9 @@ header {
   background: linear-gradient(to right, #624354, #e59e7b);
   z-index: 4;
   transition: all 0.5s ease 0.4s;
-
+  
 }
-
-.content1 {
+.content1{
   --offset: 0;
   position: absolute;
   width: 100%;
@@ -531,13 +516,12 @@ header {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  background-color: #5e2745;
+  background-color:#5e2745;
   border-radius: 10PX;
   transition: all 0.35s ease 0.75s;
   z-index: 10;
 }
-
-.content2 {
+.content2{
   --offset: 0;
   position: absolute;
   width: 100%;
@@ -551,8 +535,7 @@ header {
   transition: all 0.35s ease 0.75s;
   z-index: 10;
 }
-
-.content3 {
+.content3{
   --offset: 0;
   position: absolute;
   width: 100%;
@@ -565,83 +548,86 @@ header {
   opacity: 0;
   transition: all 0.35s ease 0.75s;
   z-index: 10;
-
+  
 }
 
-.content-wrapper {
-  text-align: center;
 
+.content-wrapper{
+  text-align: center;
+  
 }
 
 body.active1 .content1 {
   opacity: 1;
   transform: none;
 }
-
 body.active1 .popup {
   opacity: 1;
   visibility: visible;
 }
 
-body.active1 .popup-inside {
+body.active1 .popup-inside{
   border-radius: 0;
   box-shadow: -50px 0 200px -50px #000000, 50px 0 200px -50px #000000;
 }
 
-body.active1 .background {
+body.active1 .background{
   transform: scale(1);
 }
 
-body.active1 .background6 {
+body.active1 .background6{
   transform: scale(8);
 }
+
+
+
+
 
 body.active2 .content2 {
   opacity: 1;
   transform: none;
 }
-
 body.active2 .popup {
   opacity: 1;
   visibility: visible;
 }
 
-body.active2 .popup-inside {
+body.active2 .popup-inside{
   border-radius: 0;
   box-shadow: -50px 0 200px -50px #000000, 50px 0 200px -50px #000000;
 }
 
-body.active2 .background {
+body.active2 .background{
   transform: scale(1);
 }
 
-body.active2 .background6 {
+body.active2 .background6{
   transform: scale(8);
 }
+
+
 
 body.active3 .content3 {
   opacity: 1;
   transform: none;
 }
-
 body.active3 .popup {
   opacity: 1;
   visibility: visible;
 }
 
-body.active3 .popup-inside {
+body.active3 .popup-inside{
   border-radius: 0;
   box-shadow: -50px 0 200px -50px #000000, 50px 0 200px -50px #000000;
 }
 
-body.active3 .background {
+body.active3 .background{
   transform: scale(1);
 }
 
-body.active3 .background6 {
+body.active3 .background6{
   transform: scale(8);
 }
-
 /* -----===== ORIGEN =====----- */
 #ORIGIN {
   background-color: #F5985B;
