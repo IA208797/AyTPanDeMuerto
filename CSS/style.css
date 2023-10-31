@@ -388,7 +388,7 @@ header {
   cursor: pointer;
   position: static;
   z-index: 2;
-  /*background-color: #79155b94;*/
+  background-color: #79155b94;
   outline: none;
   border: none;
   transition: all 0.5s ease;
