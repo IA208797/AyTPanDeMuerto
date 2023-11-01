@@ -71,6 +71,7 @@ a {
     border-radius: 100%;
     transition: ease 1s;
     animation: floating 4s ease infinite, movimiento 1s;
+    fill:  #ffffff;
 }
 
 .img-w{
