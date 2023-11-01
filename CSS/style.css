@@ -72,6 +72,7 @@ a {
     transition: ease 1s;
     animation: floating 4s ease infinite, movimiento 1s;
     fill:  #ffffff;
+    display: none;
 }
 
 .img-w{
@@ -1337,6 +1338,7 @@ button:focus {
 }
 
 .menu .opciones__grid {
+  font-size: --font-p;
   display: grid;
   grid-template-columns: repeat(3, 100px);
   grid-template-rows: repeat(2, 100px);
