@@ -66,11 +66,15 @@ a {
 #float{
     position: fixed;
     z-index: 300;
-    bottom: 30px;
+    bottom: 15px;
     right: 5%;
     border-radius: 100%;
     transition: ease 1s;
     animation: floating 4s ease infinite, movimiento 1s;
+}
+
+.img-w{
+    fill: #ffffff;
 }
 
 @keyframes floating{
@@ -93,7 +97,7 @@ a {
     }
 
     100%{
-        bottom: 30px;
+        bottom: 15px;
     }
 }
 
