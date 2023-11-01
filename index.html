@@ -17,10 +17,26 @@
     </style>
     <script src="js/functions.js"></script>
     <link rel="icon" href="img/Monarch.svg">
+    <script>
+        $(document).ready(function () {
+    slider();
+});
+
+$(window).scroll(function () {
+    slider();
+});
+
+function slider() {
+    if (document.body.scrollTop > 100)
+        $('#float').stop().animate({"margin-left": '0'});
+    else
+        $('#float').stop().animate({"margin-left": '-200'});
+}
+    </script>
 </head>
 
 <body>
-       <a href="#SVG" class="float">
+       <a href="#SVG" id="float">
         <img src="img/arrow-circle-up.svg" alt="" class="img-w">
     </a>
     <!--ENCABEZADO & LOGO-->
