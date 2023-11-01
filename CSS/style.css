@@ -135,7 +135,6 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 #Partes{
   width: 100%;
