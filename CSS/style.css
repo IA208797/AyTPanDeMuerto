@@ -69,25 +69,21 @@ a {
     bottom: 30px;
     right: 5%;
     border-radius: 100%;
-    box-shadow: 0px 0px 54px -8px rgba(0, 0, 0, 0.51);
     transition: ease 1s;
-    animation: floating 4s ease infinite, movimiento 2s;
+    animation: floating 4s ease infinite, movimiento 1s;
 }
 
 @keyframes floating{
     0%{
         transform: scale(1.0);
-        box-shadow: 0px 0px 54px -8px rgba(0, 0, 0, 0.51);
     }
 
     50% {
-        transform: scale(1.2);
-        box-shadow: 0px 0px 20px 1px rgb(0 0 0 / 64%);
+        transform: scale(1.05);
     }
 
     100%{
         transform: scale(1.0);
-        box-shadow: 0px 0px 54px -8px rgba(0, 0, 0, 0.51);
     }
 }
 
