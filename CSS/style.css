@@ -63,7 +63,7 @@ a {
   color: #CC3186;
 }
 
-.float{
+#float{
     position: fixed;
     z-index: 300;
     bottom: 30px;
