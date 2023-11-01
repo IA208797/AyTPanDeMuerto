@@ -66,12 +66,12 @@ a {
 .float{
     position: fixed;
     z-index: 300;
-    bottom: 70px;
+    bottom: 30px;
     right: 5%;
     border-radius: 100%;
     box-shadow: 0px 0px 54px -8px rgba(0, 0, 0, 0.51);
-    transition: esae 1s;
-    animation: floating 2s ease infinite, movimiento 10s;
+    transition: ease 1s;
+    animation: floating 4s ease infinite, movimiento 2s;
 }
 
 @keyframes floating{
@@ -97,7 +97,7 @@ a {
     }
 
     100%{
-        bottom: 20px;
+        bottom: 30px;
     }
 }
 
