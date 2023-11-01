@@ -375,7 +375,7 @@ header {
   cursor: pointer;
   position:static;
   z-index: 2;
-  background-color: #79155b94;
+  color: none;
   outline: none;
   border: none;
   transition: all 0.5s ease;
@@ -511,12 +511,12 @@ header {
   --offset: 0;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  background-color:#5e2745;
+  background-color:var(--bg);
   border-radius: 10PX;
   transition: all 0.35s ease 0.75s;
   z-index: 10;
@@ -530,7 +530,7 @@ header {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  background-color: #d8652c;
+  background-color: var(--bg2);
   border-radius: 10PX;
   transition: all 0.35s ease 0.75s;
   z-index: 10;
@@ -539,11 +539,11 @@ header {
   --offset: 0;
   position: absolute;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #5d1f41;
+  background-color: var(--bg3);
   border-radius: 10PX;
   opacity: 0;
   transition: all 0.35s ease 0.75s;
